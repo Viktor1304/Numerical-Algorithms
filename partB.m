@@ -3,7 +3,7 @@ function partB(t, y_n, omega, phi, dt)
 % Args: t, y_n, omega, phi, dt
 
 max_deg = 20;
-chosen_deg = 11;
+chosen_deg = 12;
 
 % Fit polynomials
 [coeffs_cell, cond_vals, t_scaled, scale_factor] = polynomial_fit(t, y_n, max_deg);
