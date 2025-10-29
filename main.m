@@ -11,7 +11,7 @@ T = 2 * pi;
 dt = 0.001;
 omega = 2.0;
 phi = pi / 6;
-sigma = 0.001;
+sigma = 0.01;
 
 % Generate signal used in all parts
 [t, y, y_n] = generate_signal(T, dt, omega, phi, sigma);

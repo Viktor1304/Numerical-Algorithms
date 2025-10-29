@@ -16,6 +16,7 @@ for m = 1 : max_deg
     V = V(:, end - m : end);
     coeffs = V \ y_n(:);
     coeffs_cell{m} = coeffs';
-    cond_vals(m) = cond(V'*V);
+    cond_vals(m) = cond(V' * V);
 end
+
 end

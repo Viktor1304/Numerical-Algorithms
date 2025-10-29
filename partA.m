@@ -12,5 +12,6 @@ xlabel('Effective step h');
 ylabel('Normalised L2 Error');
 legend('Forward', 'Backward', 'Central');
 grid on;
+saveas(gcf, 'l2diff.jpg');
 
 end

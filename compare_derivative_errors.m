@@ -24,14 +24,15 @@ end
 
 % Plot L2 errors vs degree
 figure;
-semilogy(1 : max_deg, L2_poly, 'o-', 'LineWidth', 1.5, 'DisplayName', 'Polynomial derivative');
+semilogy(1 : max_deg, L2_poly, 'o-', 'LineWidth', 2, 'DisplayName', 'Polynomial derivative');
 hold on;
-semilogy(1 : max_deg, L2_central, 's--', 'LineWidth', 1.5, 'DisplayName', 'Central diff');
+semilogy(1 : max_deg, L2_central, 's--', 'LineWidth', 2, 'DisplayName', 'Central diff');
 xlabel('Polynomial degree m');
 ylabel('L2 error');
 title('L2 error of derivative estimates vs polynomial degree');
 legend('show','Location','best');
 grid on;
+saveas(gcf, 'poly-error.jpg');
 
 [minErr, bestDeg] = min(L2_poly);
 fprintf('Minimum L2 error from polynomial derivatives: %.3e (degree m=%d)\n', minErr, bestDeg);

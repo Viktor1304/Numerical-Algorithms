@@ -43,5 +43,6 @@ ylabel('Global error  ||y - y_{true}||_{\infty}');
 title('Global error vs step size for Euler and RK4');
 grid on;
 legend('show', 'Location', 'best');
+saveas(gcf, 'euler-rk4.jpg');
 
 end

@@ -7,4 +7,6 @@ xlabel('Polynomial degree m');
 ylabel('cond(V''V)');
 title('Condition number vs polynomial degree');
 grid on;
+saveas(gcf, 'cond.jpg');
+
 end
